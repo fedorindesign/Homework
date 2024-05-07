@@ -1,3 +1,5 @@
+@import url('reset.css');
+
 body {
   color: #3d3d3d;
   background-color: #fff;
@@ -130,3 +132,22 @@ header {
   text-transform: uppercase;
 }
 /* Home End */
+
+/* SHOP start */
+
+.float-parent {
+  padding: 20px 0;
+  background: orange;
+}
+.float-parent>div {
+  outline: 2px solid red;
+  width: 300px;
+  float: left;
+}
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* Shop End */

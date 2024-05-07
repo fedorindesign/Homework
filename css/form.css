@@ -118,7 +118,7 @@ button {
 .footer-title p {
   display: inline-block;
 }
-.footer-title:after, .footer-title:before {
+.footer-title::after, .footer-title::before {
   display: inline-block;
   content: "";
   border-bottom: 1px solid #EAEAEA;
