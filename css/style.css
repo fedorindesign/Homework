@@ -18,6 +18,7 @@ header {
 }
 .header {
   padding: 30px 0 12px;
+  margin-bottom: 30px;
   font-size: 0px;
   vertical-align: top;
 }
@@ -149,5 +150,118 @@ header {
   content: '';
   clear: both;
 }
-
+.sidebar {
+  width: 310px;
+  background-color: #FBFBFB;
+  float: left;
+  padding: 14px 18px;
+}
+.sidebar h3 {
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.sidebar-menu {
+  padding: 7px 0 0 12px;
+  font-size: 15px;
+  line-height: 40px;
+  min-height: 760px;
+}
+.sidebar-menu li.active a{
+  font-weight: 700;
+  color: #46A358;
+}
+.sidebar .sidebar-img {
+  width: 310px;
+  margin: 0 -18px;
+}
+.products {
+  width: 840px;
+  float: right;
+  font-size: 15px;
+  line-height: 16px;
+}
+.products-filter {
+  margin-bottom: 53px;
+}
+.products-filter-item {
+  float: left;
+}
+.products-filter-item li{
+  display: inline-block;
+  margin-right: 40px;
+}
+.products-filter-item li.active a{
+  color: #46A358;
+  font-weight: 600;
+  border-bottom: 2px solid #46A358;
+  padding-bottom: 7px;
+}
+.products-sort {
+  float: right;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.products-sort a{
+  margin-left: 8px;
+}
+.products-cards {
+  margin: 0 -15px;
+}
+.product-item {
+  width: 33.3%;
+  float: left;
+  padding: 0 15px;
+  margin: 0 0 70px;
+}
+.product-item img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 0 12px;
+}
+.product-item h3{
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.price-item {
+  color: #46A358;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.pagination {
+  float: right;
+  margin: 0 0 80px;
+}
+.pagination-items li {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #E5E5E5;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 9px 0 0;
+}
+.pagination-items li a{
+  padding: 16px 8px;
+  cursor: pointer;
+}
+.pagination-items li.active-page {
+  background-color: #46A358;
+  border: #46A358;
+}
+.pagination-items li.active-page a{
+  color: #fff; 
+  font-weight: 700;
+}
+.paginat
 /* Shop End */
