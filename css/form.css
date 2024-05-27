@@ -4,15 +4,13 @@ body {
 .form {
   width: 500px;
   margin: 0 auto;
-  margin-top: 100px;
-}
-form {
+  margin-top: 100px; 
   background: #fff;
   padding: 0 20px;
   font-family: 'Cera Pro', sans-serif;
   box-sizing: border-box;
   color: #3d3d3d;
-  }
+}
 .form-container {
   width: 300px;
   margin: 0 auto;

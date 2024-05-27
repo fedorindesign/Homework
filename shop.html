@@ -9,7 +9,7 @@
   <title>Lesson 6</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header sticky">
     <div class="container header-container">
       <a class="header-logo" href="index.html"><img src="img/Logo.svg" alt="Greenshop" width="150"></a>
       <ul class="header-list">
@@ -21,24 +21,24 @@
       <a class="header-btn" href="registration.html"><img src="img/Logout.svg" alt="icon" width="20" height="20">login</a>
     </div>
   </header>
-  <div class="container clearfix">
-    <aside class="sidebar">
-      <h3>Categories</h3>
-      <ul class="sidebar-menu">
-        <li class="active"><a href="#">House Plants</a></li>
-        <li><a href="#">Potter Plants</a></li>
-        <li><a href="#">Seeds</a></li>
-        <li><a href="#">Small Plants</a></li>
-        <li><a href="#">Big Plants</a></li>
-        <li><a href="#">Succulents</a></li>
-        <li><a href="#">Trerrariums</a></li>
-        <li><a href="#">Gardening</a></li>
-        <li><a href="#">Accessories</a></li>
-      </ul>
-      <img class="sidebar-img" src="img/banner.jpg" alt="Super Sale" width="310" height="470">
-    </aside>
-    <main>
-      <section class="products">
+  <div class="shop">
+    <div class="container page-sidebar">
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul class="sidebar-menu">
+          <li class="active"><a href="#">House Plants</a></li>
+          <li><a href="#">Potter Plants</a></li>
+          <li><a href="#">Seeds</a></li>
+          <li><a href="#">Small Plants</a></li>
+          <li><a href="#">Big Plants</a></li>
+          <li><a href="#">Succulents</a></li>
+          <li><a href="#">Trerrariums</a></li>
+          <li><a href="#">Gardening</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+        <img class="sidebar-img" src="img/banner.jpg" alt="Super Sale" width="310" height="470">
+      </aside>
+      <main class="products">
         <div class="products-filter">
           <ul class="products-filter-item">
             <li class="active"><a href="#">All Plants</a></li>
@@ -46,56 +46,155 @@
             <li><a href="#">Sale</a></li>
           </ul>
           <p class="products-sort">Sort by: <a href="#">Default sorting <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.6666 1.66667L5.99992 6.33334L1.33325 1.66667" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.6666 1.66667L5.99992 6.33334L1.33325 1.66667" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </a></p>
         </div>
 
-        <div class="products-cards clearfix">
+        <div class="products-cards">
           <article class="product-item">
-            <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
-            <h3 class="item-title">Barberton Daisy</h3>
-            <div class="price-item">$119.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+              <div class="price-item">$119.00</div>
+            </div>  
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
-            <h3 class="item-title">Angel Wing Begonia</h3>
-            <div class="price-item">$169.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+              <div class="price-item">$169.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
-            <h3 class="item-title">African Violet</h3>
-            <div class="price-item">$199.00</div>
+            <div class="item-image">
+              <span class="card-off active">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">African Violet</a></h3>
+              <div class="price-item">$199.00</div>
+            </div>  
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
-            <h3 class="item-title">Barberton Daisy</h3>
-            <div class="price-item">$119.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+              <div class="price-item">$119.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
-            <h3 class="item-title">Angel Wing Begonia</h3>
-            <div class="price-item">$169.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+              <div class="price-item">$169.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
-            <h3 class="item-title">African Violet</h3>
-            <div class="price-item">$199.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">African Violet</a></h3>
+              <div class="price-item">$199.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
-            <h3 class="item-title">Barberton Daisy</h3>
-            <div class="price-item">$119.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#" class=""><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+              <div class="price-item">$119.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
-            <h3 class="item-title">Angel Wing Begonia</h3>
-            <div class="price-item">$169.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+              <div class="price-item">$169.00</div>
+            </div>
           </article>
           <article class="product-item">
-            <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
-            <h3 class="item-title">African Violet</h3>
-            <div class="price-item">$199.00</div>
+            <div class="item-image">
+              <span class="card-off">13% off</span>
+              <ul class="item-actions">
+                <li class="item-icon"><a href="#"><img src="img/svg/shopping.svg" alt="cart"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/heart.svg" alt="like"></a></li>
+                <li class="item-icon"><a href="#"><img src="img/svg/loop.svg" alt="loop"></a></li>
+              </ul>
+              <div class="hover-bg"></div>
+              <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+            </div>
+            <div class="item-text">
+              <h3 class="item-title"><a href="#">African Violet</a></h3>
+              <div class="price-item">$199.00</div>
+            </div>
           </article>
         </div>
         <div class="pagination">
@@ -105,13 +204,13 @@
             <li><a href="#">3</a></li>
             <li><a href="#">40</a></li>
             <li><a href="#"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.375 0.75C1.375 0.75 6.625 3.858 6.625 6C6.625 8.14125 1.375 11.25 1.375 11.25" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.375 0.75C1.375 0.75 6.625 3.858 6.625 6C6.625 8.14125 1.375 11.25 1.375 11.25" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
               </a></li>
           </ul>
         </div>
-      </section>
-    </main>
+      </main>
+    </div>
   </div>
 </body>
 </html>

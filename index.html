@@ -9,28 +9,611 @@
   <title>Lesson 6</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header sticky">
     <div class="container header-container">
       <a class="header-logo" href="index.html"><img src="img/Logo.svg" alt="Greenshop" width="150"></a>
       <ul class="header-list">
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
-        <li><a href="#">Plant Care</a></li>
+        <li class="list-open">
+          <a href="#">Plant Care</a>
+          <ul class="header-items">
+            <li class="list-item"><a href="#">Drainage</a></li>
+            <li class="list-item"><a href="#">Fungicides</a></li>
+            <li class="list-item">
+              <a href="#">Fertilizer</a></li>
+            <li class="list-item icon-open">
+              <a href="#">
+                <svg>
+                <use href="img/sprite.svg#header-arrow-icon"></use>
+              </svg>Priming</a>
+              <ul class="header-items-three">
+                <li><a href="#">Universal</a></li>
+                <li><a href="#">For Ficus</a></li>
+                <li><a href="#">For Cacti</a></li>
+                <li><a href="#">For Citrus</a></li>
+                <li><a href="#">For those in bloom</a></li>
+                <li><a href="#">For Orchids</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
         <li><a href="registration.html">Blogs</a></li>
       </ul>
       <a class="header-btn" href="registration.html"><img src="img/Logout.svg" alt="icon" width="20" height="20">login</a>
     </div>
   </header>
-  <main class="container hero-container">
-    <div class="cover">
-      <div class="text-section">
-        <h1>Welcome to Greenshop</h1>
-        <p class="hero-text">Let's make a better <span>Planet</span></p>
-        <p class="desc">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-        <a class="hero-btn" href="#">Shop now</a>
+  <main class="page">
+    <div class="container hero-container">
+      <div class="cover">
+        <div class="text-section">
+          <h1>Welcome to Greenshop</h1>
+          <p class="hero-text">Let's make a better <span>Planet</span></p>
+          <p class="desc">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <a class="hero-btn" href="#">Shop now</a>
+        </div>
+        <div class="image-section"><img src="img/image-eco.png" alt="Eco Planet" width="507" height="450"></div>
       </div>
-      <div class="image-section"><img src="img/image-eco.png" alt="Eco Planet" width="507" height="450"></div>
+    </div>
+    <!-- Shop section -->
+    <div class="shop">
+      <div class="container page-sidebar">
+        <aside class="sidebar">
+          <h3>Categories</h3>
+          <ul class="sidebar-menu">
+            <li class="active"><a href="#">House Plants</a></li>
+            <li><a href="#">Potter Plants</a></li>
+            <li><a href="#">Seeds</a></li>
+            <li><a href="#">Small Plants</a></li>
+            <li><a href="#">Big Plants</a></li>
+            <li><a href="#">Succulents</a></li>
+            <li><a href="#">Trerrariums</a></li>
+            <li><a href="#">Gardening</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+          <img class="sidebar-img" src="img/banner.jpg" alt="Super Sale" width="310" height="470">
+        </aside>
+        <div class="products">
+          <div class="products-filter">
+            <ul class="products-filter-item">
+              <li class="active"><a href="#">All Plants</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+            <p class="products-sort">Sort by: <a href="#">Default sorting <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.6666 1.66667L5.99992 6.33334L1.33325 1.66667" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </a></p>
+          </div>
+
+          <div class="products-cards">
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+                <div class="price-item">$119.00</div>
+              </div>  
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+                <div class="price-item">$169.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off active">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">African Violet</a></h3>
+                <div class="price-item">$199.00</div>
+              </div>  
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+                <div class="price-item">$119.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+                <div class="price-item">$169.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">African Violet</a></h3>
+                <div class="price-item">$199.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#" class=""><img src="img/products/item-1.jpg" alt="image 1" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Barberton Daisy</a></h3>
+                <div class="price-item">$119.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-2.jpg" alt="image 2" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">Angel Wing Begonia</a></h3>
+                <div class="price-item">$169.00</div>
+              </div>
+            </article>
+            <article class="product-item">
+              <div class="item-image">
+                <span class="card-off">13% off</span>
+                <ul class="item-actions">
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#shop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#heart-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#">
+                      <svg>
+                        <use href="img/sprite.svg#loop-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hover-bg"></div>
+                <a href="#"><img src="img/products/item-3.jpg" alt="image 3" width="258" height="300"></a>
+              </div>
+              <div class="item-text">
+                <h3 class="item-title"><a href="#">African Violet</a></h3>
+                <div class="price-item">$199.00</div>
+              </div>
+            </article>
+          </div>
+          <div class="pagination">
+            <ul class="pagination-items">
+              <li class="active-page"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">40</a></li>
+              <li><a href="#"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.375 0.75C1.375 0.75 6.625 3.858 6.625 6C6.625 8.14125 1.375 11.25 1.375 11.25" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Plant Care section -->
+    <div class="container plant">
+      <div class="plant-section">
+        <div class="plant-cards">
+          <div class="plant-item">
+            <a class="plant-image" href="#">
+              <img src="img/image 14.png" alt="plant" width="292" height="292">
+            </a>
+            <div class="plant-text">
+              <h3>Summer cactus & succulents</h3>
+              <div class="desc">
+                We are an online plant shop offering a wide range of cheap and trendy plants
+              </div>
+              <a class="plant-btn" href="#">Find More</a>
+            </div>
+          </div>
+          <div class="plant-item">
+            <a class="plant-image" href="#">
+              <img src="img/image 15.png" alt="plant" width="292" height="292">
+            </a>
+            <div class="plant-text">
+              <h3>Styling Trends & much more</h3>
+              <div class="desc">
+                We are an online plant shop offering a wide range of cheap and trendy plants
+              </div>
+              <a class="plant-btn" href="#">Find More</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+
+  <footer class="footer container">
+    <div class="footer-section">
+      <div class="newsletter">
+        <div class="news-block">
+          <div class="image">
+            <a href="#"></a>
+          </div>
+          <div class="news-text">
+            <a class="news-image" href="#">
+              <img src="img/svg/garden-1.svg" alt="garden" width="61" height="93">
+            </a>
+            <h3>Garden Care</h3>
+            <div class="desc">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </div>
+          </div>
+        </div>
+        <div class="news-block">
+          <a class="news-image" href="#">
+            <img src="img/svg/garden-2.svg" alt="garden" width="68" height="87">
+          </a>
+          <div class="news-text">
+            <h3>Plant Renovation</h3>
+            <div class="desc">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </div>
+          </div>
+        </div>
+        <div class="news-block">
+          <a class="graden news-image" href="#">
+            <img src="img/svg/garden-3.svg" alt="garden" width="83" height="85">
+          </a>
+          <div class="news-text">
+            <h3>Watering Graden</h3>
+            <div class="desc">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </div>
+          </div>
+        </div>
+        <div class="news-block news-form-block">
+          <div class="news-text">
+            <h3>Would you like to join newsletters?</h3>
+            <div class="news-form">
+              <form action="#" method="get" name="form" autocomplete="on">
+                <div class="newsletter-field">
+                  <input class="green-input" type="email" name="email" placeholder="enter your email address..." required>
+                  <button class="news-btn" type="submit" value="send">Join</button>
+                </div>
+              </form>
+            </div>
+            <div class="desc">
+              We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="green-line">
+        <li class="footer-info-box"><a class="logo" href="index.html"><img src="img/Logo.svg" alt="greenshop"></a></li>
+        <li class="footer-info-box">
+          <a class="icon-link" href="#">
+            <div class="info-icon">
+              <svg>
+                <use href="img/sprite.svg#location-icon"></use>
+              </svg>
+            </div>
+            <p class="address">70 West Buckingham Ave. Farmingdale, NY 11735</p>
+          </a>
+        </li>
+        <li class="footer-info-box">
+          <a class="icon-link" href="mailto:contact@greenshop.com">
+            <div class="info-icon">
+              <svg>
+                <use href="img/sprite.svg#email-icon"></use>
+              </svg>
+            </div>
+            <p>contact@greenshop.com</p>
+          </a>
+        </li>
+        <li class="footer-info-box">
+          <a class="icon-link" href="tel:+8801911717490">
+            <div class="info-icon">
+              <svg>
+                <use href="img/sprite.svg#phone-icon"></use>
+              </svg>
+            </div>
+            <p>+88 01911 717 490</p>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-widgets">
+        <section class="nav-footer">
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Our stores</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Specials</a></li>
+          </ul>
+        </section>
+        <section class="nav-footer">
+          <h3>Help & Guide</h3>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">How to Buy</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Product Policy</a></li>
+            <li><a href="#">How to Return</a></li>
+          </ul>
+        </section>
+        <section class="nav-footer">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">House Plants</a></li>
+            <li><a href="#">Potter Plants</a></li>
+            <li><a href="#">Seeds</a></li>
+            <li><a href="#">Small Plants</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </section>
+        <section class="nav-footer additional-footer">
+          <div class="social-media">
+            <h3>Social Media</h3>
+            <ul class="icon-list">
+              <li class="icon-item">
+                <a class="icon-link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a class="icon-link" href="#">
+                  <svg>
+                    <use href="img/sprite.svg#union"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accept">
+            <h3>We accept</h3>
+            <img src="img/logos.png" alt="accept-cards" width="224" height="26">
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="under-footer">
+      © 2021 <a href="#">GreenShop.</a> All Rights Reserved.
+    </div>
+  </footer>
 </body>
 </html>
