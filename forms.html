@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <title>Forms</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="form">
+        <div class="form-switcher">
+          <input type="checkbox" id="check">
+          <label for="check">
+            <span>Login</span>
+            <span>Register</span>
+          </label>
+        </div>
+        <form action="#" method="get" name="form" autocomplete="on">
+          <div class="form-container">
+            <div class="form-header">
+              <h2>Login</h2>
+            </div>
+            <div class="form-fields">
+              <input type="email" name="email" placeholder="Enter your e-mail" required>
+              <input type="password" name="pass" placeholder="Password" required>
+              <div class="forgot">
+                <input type="checkbox" id="remember">
+                <label for="remember">
+                  <span>Remember me</span>
+                </label>
+                <a href="#" class="question">Forgot your password?</a>
+              </div>
+              <button type="submit" name="send">Sign In</button>
+            </div>
+            <div class="form-footer">
+              <div class="additional">
+                <a class="green-text" href="#">Don't have an account yet?</a>
+                <a href="#">Register</a>
+              </div>
+              <p class="green-text">Or login via</p>
+              <ul class="social-icons">
+                <li class="icon">
+                  <a href="#">
+                    <svg>
+                      <use href="img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon">
+                  <a href="#">
+                    <svg>
+                      <use href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="icon">
+                  <a href="#">
+                    <svg>
+                      <use href="img/sprite.svg#in"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>
