@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <title>WebStudio</title>
 </head>
 
@@ -12,109 +11,385 @@
   <header class="site-header">
     <div class="container header-container">
       <a class="header-logo" href="index.html"><img src="img/WebStudio.svg" alt="WebStudio" width="145" height="31"></a>
-      <ul class="nav">
+      <ul class="nav-desctop">
         <li class="nav-item"><a class="active" href="index.html">Studio</a></li>
         <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a href="#">Contacts</a></li>
+        <li class="nav-item">
+          <a href="#">Contacts</a>
+          <ul class="header-sub-list">
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Active item</a>
+              <ul class="header-third-list">
+                <li class="sub-third-item">
+                  <a href="#" class="third-item-link">
+                    Third item
+                  </a>
+                </li>
+                <li class="sub-third-item">
+                  <a href="#" class="third-item-link">
+                    Third item
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
       <div class="info">
         <a class="header-email active" href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
+      <!-- Mobile menu -->
+  <nav class="mobile-menu">
+    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+    <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Home</a></li>
+        <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
+    </ul>
+    <div class="info">
+      <a class="header-email active" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
+    </div>
+</nav>
+  <!-- Mobile menu end -->
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-container">
-        <h1 class="hero-title">Effective solutions for your business</h1>
-        <button class="hero-btn" href="#">Order service</a>
-      </div>
-    </section>
+  <div class="wrapper">
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Effective solutions for your business</h1>
+          <button class="hero-btn" href="#">Order service</a>
+        </div>
+      </section>
 
-    <section class="about">
-      <div class="container about-container">
-        <div class="card-box">
-          <h3>Attention to detail</h3>
-          <p>Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
+      <section class="about">
+        <div class="container about-container">
+          <div class="card-box">
+            <a class="icon-box" href="#">
+              <svg>
+                <use href="img/sprite.svg#service-1"></use>
+              </svg>
+            </a>
+            <h3>Attention to detail</h3>
+            <p>Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
+          </div>
+          <div class="card-box">
+            <a class="icon-box" href="#">
+              <svg>
+                <use href="img/sprite.svg#service-2"></use>
+              </svg>
+            </a>
+            <h3>Punctuality</h3>
+            <p>The task of the organization, in particular the scope and location of personnel training, entails.</p>
+          </div>
+          <div class="card-box">
+            <a class="icon-box" href="#">
+              <svg>
+                <use href="img/sprite.svg#service-3"></use>
+              </svg>
+            </a>
+            <h3>Planning</h3>
+            <p>Equally, consultation with a broad asset is largely conditional.</p>
+          </div>
+          <div class="card-box">
+            <a class="icon-box" href="#">
+              <svg>
+                <use href="img/sprite.svg#service-4"></use>
+              </svg>
+            </a>
+            <h3>Modern technologies</h3>
+            <p>The significance of these problems is so obvious that the implementation of planned targets.</p>
+          </div>
         </div>
-        <div class="card-box">
-          <h3>Punctuality</h3>
-          <p>The task of the organization, in particular the scope and location of personnel training, entails.</p>
-        </div>
-        <div class="card-box">
-          <h3>Planning</h3>
-          <p>Equally, consultation with a broad asset is largely conditional.</p>
-        </div>
-        <div class="card-box">
-          <h3>Modern technologies</h3>
-          <p>The significance of these problems is so obvious that the implementation of planned targets.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="services">
-      <div class="container services-container">
-        <h2 class="sub-title">What are we doing</h2>
-        <div class="service-boxes">
-          <div class="service-box">
-            <a href="#"><img src="img/img.jpg" alt="service 1" width="370" height="294"></a>
-          </div>
-          <div class="service-box">
-            <a href="#"><img src="img/img-2.jpg" alt="service 2" width="370" height="294"></a>
-          </div>
-          <div class="service-box">
-            <a href="#"><img src="img/img-3.jpg" alt="service 3" width="370" height="294"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="team">
-      <div class="container team-container">
-        <h2 class="sub-title">What are we doing</h2>
-        <div class="team-boxes">
-          <div class="team-box">
-            <a href="#"><img src="img/t1.png" alt="team 1" width="270" height="260"></a>
-            <div class="team-box-text">
-              <a href=""><h3>Igor Demyanenko</h3></a>
-              <p class="description">Product Designer</p>
+      <section class="services">
+        <div class="container services-container">
+          <h2 class="sub-title">What are we doing</h2>
+          <div class="service-boxes">
+            <div class="service-box">
+              <a href="#"><img src="img/img.jpg" alt="service 1" width="370" height="294"></a>
             </div>
-          </div>
-          <div class="team-box">
-            <a href="#"><img src="img/t2.png" alt="team 2" width="270" height="260"></a>
-            <div class="team-box-text">
-              <a href=""><h3>Olga Repina</h3></a>
-              <p class="description">Frontend Developer</p>
+            <div class="service-box">
+              <a href="#"><img src="img/img-2.jpg" alt="service 2" width="370" height="294"></a>
             </div>
-          </div>
-          <div class="team-box">
-            <a href="#"><img src="img/t3.png" alt="team 3" width="270" height="260"></a>
-            <div class="team-box-text">
-              <a href=""><h3>Nikolay Tarasov</h3></a>
-              <p class="description">Marketing</p>
-            </div>
-          </div>
-          <div class="team-box">
-            <a href="#"><img src="img/t4.png" alt="team 4" width="270" height="260"></a>
-            <div class="team-box-text">
-              <a href=""><h3>Mikhail Ermakov</h3></a>
-              <p class="description">UI Designer</p>
+            <div class="service-box">
+              <a href="#"><img src="img/img-3.jpg" alt="service 3" width="370" height="294"></a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <div class="logo"><a href="index.html"><img src="img/WebStudio-footer.svg" alt="WebStudio" width="145" height="31"></a></div>
-      <div class="footer-text">
-        <p>Kharkov, Pobedy Ave., 26</p>
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
+      <section class="team">
+        <div class="container team-container">
+          <h2 class="sub-title">What are we doing</h2>
+          <div class="team-boxes">
+            <div class="team-box">
+              <a href="#"><img src="img/t1.png" alt="team 1" width="270" height="260"></a>
+              <div class="team-box-text">
+                <h3><a href="#">Igor Demyanenko</a></h3>
+                <p class="description">Product Designer</p>
+                <ul class="team-icons">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#inst-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#twit-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#fb-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#in-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-box">
+              <a href="#"><img src="img/t2.png" alt="team 2" width="270" height="260"></a>
+              <div class="team-box-text">
+                <h3><a href="#">Olga Repina</a></h3>
+                <p class="description">Frontend Developer</p>
+                <ul class="team-icons">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#inst-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#twit-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#fb-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#in-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-box">
+              <a href="#"><img src="img/t3.png" alt="team 3" width="270" height="260"></a>
+              <div class="team-box-text">
+                <h3><a href="#">Nikolay Tarasov</a></h3>
+                <p class="description">Marketing</p>
+                <ul class="team-icons">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#inst-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#twit-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#fb-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#in-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-box">
+              <a href="#"><img src="img/t4.png" alt="team 4" width="270" height="260"></a>
+              <div class="team-box-text">
+                <h3><a href="#">Mikhail Ermakov</a></h3>
+                <p class="description">UI Designer</p>
+                <ul class="team-icons">
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#inst-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#twit-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#fb-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-item">
+                    <a href="#" class="icon-link">
+                      <svg>
+                        <use href="img/sprite.svg#in-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container customers-container">
+          <h2 class="sub-title">Regular customers</h2>
+          <ul class="customers-boxes">
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="customer-item">
+              <a href="#" class="logo-item">
+                <svg>
+                  <use href="img/sprite.svg#logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-section">
+          <a class="logo" href="index.html">
+            <img src="img/WebStudio-footer.svg" alt="WebStudio" width="145" height="31">
+          </a>
+          <div class="footer-text">
+            <p>Kharkov, Pobedy Ave., 26</p>
+            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="tel:+380991111111">+38 099 111 11 11</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Join us</h4>
+          <ul class="footer-icons">
+            <li class="icon-item">
+              <a href="#" class="icon-link">
+                <svg>
+                  <use href="img/sprite.svg#inst-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="#" class="icon-link">
+                <svg>
+                  <use href="img/sprite.svg#twit-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="#" class="icon-link">
+                <svg>
+                  <use href="img/sprite.svg#fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a href="#" class="icon-link">
+                <svg>
+                  <use href="img/sprite.svg#in-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section"></div>
+        <div class="footer-section"></div>    
       </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

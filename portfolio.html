@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <title>WebStudio</title>
 </head>
 
@@ -12,139 +11,225 @@
   <header class="site-header">
     <div class="container header-container">
       <a class="header-logo" href="index.html"><img src="img/WebStudio.svg" alt="WebStudio" width="145" height="31"></a>
-      <ul class="nav">
+      <ul class="nav-desctop">
         <li class="nav-item"><a href="index.html">Studio</a></li>
         <li class="nav-item"><a class="active" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a href="#">Contacts</a></li>
+        <li class="nav-item">
+          <a href="#">Contacts</a>
+          <ul class="header-sub-list">
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Some item</a>
+            </li>
+            <li class="sub-item">
+              <a class="sub-item-link" href="#">Active item</a>
+              <ul class="header-third-list">
+                <li class="sub-third-item">
+                  <a href="#" class="third-item-link">
+                    Third item
+                  </a>
+                </li>
+                <li class="sub-third-item">
+                  <a href="#" class="third-item-link">
+                    Third item
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
       <div class="info">
         <a class="header-email active" href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
+      <!-- Mobile menu -->
+  <nav class="mobile-menu">
+    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+    <div class="mobile-menu__container">
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Home</a></li>
+        <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
+    </ul>
+    <div class="info">
+      <a class="header-email active" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
+    </div>
+</nav>
+  <!-- Mobile menu end -->
     </div>
   </header>
-
-  <main class="container">
-    <section class="filters">
-      <ul class="filter-items">
-        <li><a class="active" href="#">All</a></li>
-        <li><a href="#">Web sites</a></li>
-        <li><a href="#">Applications</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Marketing</a></li>
-      </ul>
-    </section>
-    <section class="portfolio">
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p1.jpg" alt="item 1" width="370" height="294"></a>
+  <div class="wrapper">
+    <main class="container">
+      <section class="filters">
+        <ul class="filter-items">
+          <li><a class="active" href="#">All</a></li>
+          <li><a href="#">Web sites</a></li>
+          <li><a href="#">Applications</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </section>
+      <section class="portfolio">
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p1.jpg" alt="item 1" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Technoquack</a></h3>
+            <a class="category" href="#" >Web sites</a>
+          </div>
         </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Technoquack</h3></a>
-          <a class="category" href="#" >Web sites</a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p2.jpg" alt="item 2" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Poster New Orlean vs Golden Star</a></h3>
+            <a class="category" href="#" >Design</a>
+          </div>
         </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p2.jpg" alt="item 2" width="370" height="294"></a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p3.jpg" alt="item 3" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Restaurant Seafood</a></h3>
+            <a class="category" href="#" >Applications</a>
+          </div>
         </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Poster New Orlean vs Golden Star</h3></a>
-          <a class="category" href="#" >Design</a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p4.jpg" alt="item 4" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Project Prime</a></h3>
+            <a class="category" href="#" >Marketing</a>
+          </div>
         </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p3.jpg" alt="item 3" width="370" height="294"></a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p5.jpg" alt="item 5" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Project Boxes</a></h3>
+            <a class="category" href="#" >Applications</a>
+          </div>
         </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Restaurant Seafood</h3></a>
-          <a class="category" href="#" >Applications</a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p6.jpg" alt="item 6" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Inspiration has no Borders</a></h3>
+            <a class="category" href="#" >Web sites</a>
+          </div>
         </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p4.jpg" alt="item 4" width="370" height="294"></a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p7.jpg" alt="item 7" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Edition Limited Edition</a></h3>
+            <a class="category" href="#" >Design</a>
+          </div>
         </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Project Prime</h3></a>
-          <a class="category" href="#" >Marketing</a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p8.jpg" alt="item 8" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Project LAB</a></h3>
+            <a class="category" href="#" >Marketing</a>
+          </div>
         </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p5.jpg" alt="item 5" width="370" height="294"></a>
+        <div class="box-item">
+          <div class="image-box">
+            <a href="#"><div class="hover-image">
+              <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
+            </div><img src="img/p9.jpg" alt="item 9" width="370" height="294"></a>
+          </div>
+          <div class="port-box-text">
+            <h3><a href="#">Growing Business</a></h3>
+            <a class="category" href="#" >Applications</a>
+          </div>
         </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Project Boxes</h3></a>
-          <a class="category" href="#" >Applications</a>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p6.jpg" alt="item 6" width="370" height="294"></a>
-        </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Inspiration has no Borders</h3></a>
-          <a class="category" href="#" >Web sites</a>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p7.jpg" alt="item 7" width="370" height="294"></a>
-        </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Edition Limited Edition</h3></a>
-          <a class="category" href="#" >Design</a>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p8.jpg" alt="item 8" width="370" height="294"></a>
-        </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Project LAB</h3></a>
-          <a class="category" href="#" >Marketing</a>
-        </div>
-      </div>
-      <div class="box-item">
-        <div class="image-box">
-          <a href="#"><div class="hover-image">
-            <p>The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to obtain useful information about the company or individual.</p>
-          </div><img src="img/p9.jpg" alt="item 9" width="370" height="294"></a>
-        </div>
-        <div class="port-box-text">
-          <a href="#"><h3>Growing Business</h3></a>
-          <a class="category" href="#" >Applications</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="logo"><a href="index.html"><img src="img/WebStudio-footer.svg" alt="WebStudio" width="145" height="31"></a></div>
-      <div class="footer-text">
-        <p>Kharkov, Pobedy Ave., 26</p>
-        <a href="mailto:info@example.com">info@example.com</a>
-        <a href="tel:+380991111111">+38 099 111 11 11</a>
+      <div class="footer-section">
+        <a class="logo" href="index.html">
+          <img src="img/WebStudio-footer.svg" alt="WebStudio" width="145" height="31">
+        </a>
+        <div class="footer-text">
+          <p>Kharkov, Pobedy Ave., 26</p>
+          <a href="mailto:info@example.com">info@example.com</a>
+          <a href="tel:+380991111111">+38 099 111 11 11</a>
+        </div>
       </div>
+      <div class="footer-section">
+        <h4>Join us</h4>
+        <ul class="footer-icons">
+          <li class="icon-item">
+            <a href="#" class="icon-link">
+              <svg>
+                <use href="img/sprite.svg#inst-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a href="#" class="icon-link">
+              <svg>
+                <use href="img/sprite.svg#twit-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a href="#" class="icon-link">
+              <svg>
+                <use href="img/sprite.svg#fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a href="#" class="icon-link">
+              <svg>
+                <use href="img/sprite.svg#in-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section"></div>
+      <div class="footer-section"></div>    
+    </div>
   </footer>
 </body>
 </html>
